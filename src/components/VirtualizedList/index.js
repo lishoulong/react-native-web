@@ -27,7 +27,6 @@ const ViewabilityHelper = require('./ViewabilityHelper');
 const StyleSheet = require('../../apis/StyleSheet').default;
 const invariant = require('fbjs/lib/invariant');
 const warning = require('fbjs/lib/warning');
-const applyNativeMethods = require('../../modules/applyNativeMethods');
 
 import type {ViewabilityConfig, ViewToken} from './ViewabilityHelper';
 
@@ -952,4 +951,4 @@ class CellRenderer extends React.Component {
   }
 }
 
-module.exports = applyNativeMethods(VirtualizedList);
+module.exports = VirtualizedList;
